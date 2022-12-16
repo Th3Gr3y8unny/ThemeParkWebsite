@@ -1,0 +1,238 @@
+/* Reset default styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set body style */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Set link styles */
+a {
+  color: #00b8d4;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #0052cc;
+}
+
+/* Set header styles */
+header {
+  background-color: #333;
+  color: #fff;
+}
+.logo {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: 0 1em;
+}
+
+/* Set hero section styles */
+#hero {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 4em 0;
+}
+#hero h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+#hero .btn {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00b8d4;
+  border: none;
+  padding: 1em 2em;
+  margin: 2em 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#hero .btn:hover, #hero .btn:focus {
+  background-color: #0052cc;
+}
+
+/* Set attraction styles */
+#attractions {
+  background-color: #f5f5f5;
+  padding: 4em 0;
+}
+#attractions h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+/* Set attraction styles */
+#attractions .attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+#attractions .attraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#attractions .attraction img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1em;
+}
+#attractions .attraction h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+#attractions .attraction p {
+  margin: 0;
+}
+
+/* Set pricing table styles */
+#prices h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+.pricing-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  margin: 4em 0;
+}
+.pricing-option {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 2em;
+  text-align: center;
+}
+.pricing-option h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+.pricing-option .price {
+  font-size: 2em;
+  font-weight: bold;
+  color: #00b8d4;
+  margin: 1em 0;
+}
+.pricing-option ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pricing-option li {
+  margin: 0.5em 0;
+}
+.pricing-option .btn {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00b8d4;
+  border: none;
+  padding: 1em 2em;
+  margin: 2em 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pricing-option .btn:hover, .pricing-option .btn:focus {
+  background-color: #0052cc;
+}
+
+/* Set location styles */
+#location {
+  background-color: #f5f5f5;
+  padding: 4em 0;
+}
+#location h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+#location ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#location li {
+  margin: 0.5em 0;
+}
+#location img {
+  width: 100%;
+  max-width: 600px;
+  margin: 2em 0;
+}
+
+/* Set footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2em 0;
+}
+footer p {
+  margin: 0
+}
+
+/* Set media queries */
+@media (max-width: 768px) {
+  /* Adjust header layout on smaller screens */
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    margin: 0 0 1em 0;
+  }
+  nav {
+    justify-content: flex-start;
+    margin: 1em 0 0 0;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+
+  /* Adjust attraction grid layout on smaller screens */
+  #attractions .attractions-grid {
+    grid-template-columns: 1fr;
+  }
+}
